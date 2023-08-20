@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* COLORS */
+    --Soft-blue: hsl(215, 23%, 43%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-mainBG: hsl(217, 54%, 11%);/*main BG*/
+    --Very-dark-blue-cardBG: hsl(216, 50%, 16%);/*card BG*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /* FONTS */
+    --Font-family: 'Outfit', sans-serif;
+    --Font-size: 19px;
+    --Font-weight-nrml: 300;
+    --Font-weight-bold: 400;
+    --Font-weight-extra-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-dark-blue-mainBG); 
+    font-family: var(--Font-family);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: var(--Very-dark-blue-cardBG);
+    width: 350px;
+    height: 570px;
+    padding: 20px;
+    border-radius: 13px;
+}
+
+.card-img img {
+    width: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+h1 {
+    color: var(--White);
+    font-weight: var(--Font-weight-extra-bold);
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--Cyan);
+}
+
+p {
+    color: var(--Soft-blue);
+    font-weight: var(--Font-weight-bold);
+    font-size: var(--Font-size);
+    margin-top: 15px;
+    margin-bottom: 23px;
+}
+
+.ETH {
+    display: flex;
+    justify-content: space-between;
+}
+.view {
+    color: var(--Cyan);
+    font-weight: var(--Font-weight-bold);
+}
+
+.clck {
+    color: var(--Soft-blue);
+    font-weight: var(--Font-weight-bold);
+}
+
+.card-contain {
+    padding-bottom: 25px;
+}
+
+.creation {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid var(--Very-dark-blue-line);
+    padding-top: 20px;
+}
+
+.creation .image {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    position: relative;
+}
+
+.creation img {
+    width: 100%;
+}
+
+.creation p {
+    position: absolute;
+    left: 535px;
+    top: 510px;
+}
+
+.jules {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.jules:hover {
+    color: var(--Cyan);
+}
